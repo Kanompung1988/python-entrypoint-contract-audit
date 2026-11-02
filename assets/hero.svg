@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+<title id="t">Python entry point contract: metadata to module to CLI</title>
+<desc id="d">A diagram shows Python project.scripts connecting package module references to installed command names.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0A1929"/><stop offset="1" stop-color="#17314B"/></linearGradient><linearGradient id="wire"><stop stop-color="#00D9FF"/><stop offset="1" stop-color="#00FFA3"/></linearGradient></defs>
+<rect width="1200" height="520" rx="30" fill="url(#bg)"/>
+<g opacity=".06" stroke="#B6E9F4"><path d="M40 180H1160M40 340H1160M220 30V485M600 30V485M980 30V485"/></g>
+<text x="70" y="87" fill="#F1FCFF" font-family="Inter,Arial,sans-serif" font-size="41" font-weight="700">A CLI starts with a contract.</text>
+<text x="70" y="125" fill="#A1BACB" font-family="Inter,Arial,sans-serif" font-size="20">Catch entry-point metadata drift before packaging and release.</text>
+<rect x="70" y="192" width="282" height="216" rx="18" fill="#132F48" stroke="#34677E"/>
+<text x="97" y="238" fill="#00D9FF" font-size="17" font-family="ui-monospace,monospace">pyproject.toml</text>
+<text x="97" y="294" fill="#ECFBFF" font-size="18" font-family="ui-monospace,monospace">[project.scripts]</text>
+<text x="97" y="327" fill="#00FFA3" font-size="17" font-family="ui-monospace,monospace">tool = "app.cli:main"</text>
+<text x="97" y="379" fill="#8EA9B9" font-size="14" font-family="Inter,Arial,sans-serif">DECLARATION</text>
+<path d="M367 300H460" stroke="url(#wire)" stroke-width="5" stroke-linecap="round"/><path d="M447 287L467 300L447 313" fill="none" stroke="#00D9FF" stroke-width="5" stroke-linejoin="round"/>
+<rect x="479" y="192" width="272" height="216" rx="18" fill="#132F48" stroke="#34677E"/>
+<text x="508" y="238" fill="#00D9FF" font-size="17" font-family="ui-monospace,monospace">src/app/cli.py</text>
+<text x="508" y="294" fill="#ECFBFF" font-size="18" font-family="ui-monospace,monospace">def main():</text>
+<text x="508" y="327" fill="#00FFA3" font-size="17" font-family="ui-monospace,monospace">    ...</text>
+<text x="508" y="379" fill="#8EA9B9" font-size="14" font-family="Inter,Arial,sans-serif">LOCAL TARGET</text>
+<path d="M766 300H849" stroke="url(#wire)" stroke-width="5" stroke-linecap="round"/><path d="M836 287L856 300L836 313" fill="none" stroke="#00FFA3" stroke-width="5" stroke-linejoin="round"/>
+<rect x="867" y="192" width="266" height="216" rx="18" fill="#132F48" stroke="#34677E"/>
+<text x="894" y="238" fill="#00D9FF" font-size="17" font-family="ui-monospace,monospace">CLI COMMAND</text>
+<text x="894" y="294" fill="#ECFBFF" font-size="24" font-family="ui-monospace,monospace">$ tool</text>
+<rect x="896" y="319" width="116" height="30" rx="15" fill="#15434A"/>
+<text x="954" y="339" fill="#00FFA3" text-anchor="middle" font-size="14" font-weight="700" font-family="Inter,Arial,sans-serif">CONTRACT OK</text>
+<text x="894" y="379" fill="#8EA9B9" font-size="14" font-family="Inter,Arial,sans-serif">NO IMPORT EXECUTION</text>
+<path d="M70 458H1133" stroke="url(#wire)" stroke-width="3" opacity=".7"/>
+<text x="70" y="486" fill="#A8C6D4" font-family="Inter,Arial,sans-serif" font-size="15">PEP 621  /  PYPA ENTRY POINTS  /  OFFLINE STATIC AUDIT</text>
+</svg>

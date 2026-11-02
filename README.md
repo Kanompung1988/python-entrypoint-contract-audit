@@ -5,6 +5,9 @@
   <p>Zero execution of package code · Claude Code + Codex Agent Skill · Python 3.10+</p>
 </div>
 
+<p align="center"><img src="assets/hero.svg" alt="Illustrated Python entry-point contract flow" width="100%" /></p>
+
+
 ## Why
 Python packaging's entry-point metadata is easy to misconfigure. This read-only linter finds malformed object references, reserved group conflicts, duplicate command names, dynamic/static conflicts, and suspicious local module targets **without importing code or running a build backend**.
 
